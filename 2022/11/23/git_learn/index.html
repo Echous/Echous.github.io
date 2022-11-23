@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Title -->
-<title>article title - Echous&#39;s Blog</title>
+<title>git 学习笔记 - Echous&#39;s Blog</title>
 
 <!-- Icon -->
 <link rel="icon" href="/images/favicon.ico">
@@ -85,40 +85,37 @@
                 <div class="post-container">
     <div class="post-detail gt-bg-theme-color-second gt-c-content-color-first">
         <article class="gt-post-content">
-            <h1 class="post-title">article title</h1>
+            <h1 class="post-title">git 学习笔记</h1>
             <div class="post-info">
                 <time class="post-time gt-c-content-color-first">
-                    · 2022-11-22 ·</time>
+                    · 2022-11-23 ·</time>
                 
+                    
+                        <a href="/tags/git/" class="post-tag">
+                            #git</a>
                     
                 
             </div>
             <hr>
             <div class="post-content gt-c-content-color-first">
-                
+                <h1 id="1-git-history："><a href="#1-git-history：" class="headerlink" title="1 . git history："></a>1 . git history：</h1><p>讲起git的历史，就要讲到Linux的历史。Linus在1991年创建了开源的Linux,Linux不断的发展，但Linux可以发展到今天的壮大，很大一部分原因是靠全球热心的志愿者参与其中，帮助Linus发现bug修改代码。</p>
+<p>那么问题来了，全国的志愿者如何去修改代码呢？Linus选择的是全世界的志愿者将源代码文件发给自己，然后自己手动方式去更改代码。（diff命令）</p>
+<p>可能你会想为什么当时不使用版本控制系统中呢？当时确实是有版本控制系统的，如CVS、SVN。但是CVS、SVN是收费的并且他是集中式的控制系统不但速度慢，而且必须联网。其中的付费特性就直接和linus的开源精神不符了，使用Linus是坚决反对CVS和SVN的</p>
+<p>不过发展到了2002年之后，Linux系统发展了十年之久了，代码库之大，让Linus很难通过手动管理了，于是Linus选择了一个商业版本控制系统BitKeeper,BitKeeper的东家BitMover公司出于人道主义精神，授权Linux社区免费使用这个版本控制系统。</p>
+<p>但是美好的局面2005年打破了，Linux社区的梁山好汉们，试图去破解BitKeeper的协议，被BitMover公司发现了，让这个公司一气之下就收回了Linux社区的免费使用权。</p>
+<p>Linus没有去给BitMover公司道歉，反而是花了两周时间，用c写了一个分布式版本控制系统，这就是git！！一个月之内，Linux系统的源码已经由Git管理了。</p>
+<p>Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitHub网站上线了，它为开源项目免费提供Git存储，无数开源项目开始迁移至GitHub，包括jQuery，PHP，Ruby等等。</p>
+<h1 id="2-集中式vs分布式"><a href="#2-集中式vs分布式" class="headerlink" title="2. 集中式vs分布式:"></a>2. 集中式vs分布式:</h1><p>集中式相当于由有一个图书馆，你要改书，必须先去图书馆借，然后回到家自己改，改完了再放回去。</p>
+<p>而分布式不同，分布式版本控制系统根本没有”中央服务器“，每个人都是一个完整的版本库，你工作的时候就不需要联网了，因为版本库就在你自己的电脑上。当要进行修改时，比如你在自己电脑上修改了A，你同事在他电脑上也修改了A，你们两个相互推送文件给对方，就可以相互看到对方的修改了。</p>
+<p>其实使用分布式版本控制系统，两人很少直接的推送版本库的修改，因为可能你们俩不在一个局域网内，两台电脑互相访问不了，也可能今天你的同事病了，他的电脑压根没有开机。因此，分布式版本控制系统会由一台充当”中央服务器“的电脑，但这个服务器的作用仅仅是用来方便交换大家意见的，没有他一样干活。</p>
+<hr>
+<p>git学习网站：[git学习网站](<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/896202815778784">Git的诞生 - 廖雪峰的官方网站 (liaoxuefeng.com)</a>)</p>
+<p>以上内容是通过[git学习网站](<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/896202815778784">Git的诞生 - 廖雪峰的官方网站 (liaoxuefeng.com)</a>)所总结的学习笔记</p>
+
             </div>
         </article>
     </div>
     <br>
-    
-        <div class="next-prev-post">
-            
-                <div class="prev-post">
-                    <div class="prev gt-c-content-color-first">
-                        上一篇：<a href="/2022/11/22/lang/" 
-                            class="post-title gt-a-link">lang</a>
-                    </div>
-                </div>
-            
-            
-                <div class="next-post">
-                    <div class="next gt-c-content-color-first">
-                        下一篇：<a href="/2022/11/21/hello-world/" 
-                            class="post-title gt-a-link">Hello World</a>
-                    </div>
-                </div>
-            
-        </div>
     
     
 
